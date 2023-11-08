@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text Scrambler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header> <h4>Text Scrambler</h4>
+    </header>
+    
+
+    <main>
+        <div id="formArea">
+        <textarea id="text-content" name="text-scramble" placeholder="Enter text here"></textarea>
+        <input type="text" id="words-to-redact" placeholder="Words to scramble (separated by space)">
+
+    <label for="choice">
+        <h4>Choice Redact Option</h4>
+        <select name="choice" id="redact-option">
+            <option value="*" selected>****</option>
+            <option value="#">####</option>
+            <option value="-">----</option>
+            <option value="~">~~~~</option>
+            <option value=".">....</option>
+        </select>
+    </label>
+        <button class="button1" type="submit"
+        onclick="redactText()">Redact Now</button>
+        <section>
+            <h3>scrambled words</h3>
+              <div id="statistics"></div>
+            <div id="redacted-text"></div>
+
+        </section>
+        
+        <script src="script.js"></script>
+        </div>
+
+    </main>
+     
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>REDACTR - Text Scrambler</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>REDACTR - Text Scrambler</h1>
+    <textarea id="text-content" placeholder="Enter text here"></textarea>
+    <input type="text" id="words-to-scramble" placeholder="Words to scramble (separated by space)">
+    <label for="symbol-select">Choose a symbol:</label>
+    <select id="symbol-select">
+        <option value="*">Asterisk (*)</option>
+        <option value="#">Hash (#)</option>
+        <option value="!">Exclamation Mark (!)</option>
+    </select>
+    <button onclick="scrambleText()">Scramble Now</button>
+    <div id="scrambled-text"></div>
+    <div id="statistics"></div>
+    <script src="script.js"></script>
+</body>
+</html> -->
